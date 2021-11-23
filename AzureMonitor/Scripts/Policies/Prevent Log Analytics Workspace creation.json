@@ -1,0 +1,27 @@
+{
+    "properties": {
+      "displayName": "Prevent Log Analytics Creation",
+      "policyType": "Custom",
+      "mode": "All",
+      "metadata": {
+        "category": "Monitoring"
+        
+      },
+      "parameters": {},
+      "policyRule": {
+        "if": {
+          "allOf": [
+            {
+              "field": "type",
+              "equals": "Microsoft.OperationalInsights/workspaces"
+            }
+          ]
+        },
+        "then": {
+          "effect": "deny"
+        }
+      }
+    },
+    "type": "Microsoft.Authorization/policyDefinitions",
+    "name": "9dd41824-48d5-4838-89ac-718c705ccc21"
+}
