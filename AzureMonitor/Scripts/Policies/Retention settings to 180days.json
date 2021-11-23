@@ -19,7 +19,7 @@
                   },
                   {
                     "field": "Microsoft.Insights/logProfiles/retentionPolicy.days",
-                    "equals": "150" // 30 days ingestion retention plus 150 days retetion to match Italy Law @ 180days
+                    "equals": "150" 
                   }
                 ]
               },
