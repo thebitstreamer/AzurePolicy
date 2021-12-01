@@ -9,7 +9,7 @@
                 },
                 {
                 "value": "Microsoft.OperationalInsights/workspaces/retentionInDays",
-                "notEquals": "150" 
+                "notEquals": "180" 
                 }
             ]
         
