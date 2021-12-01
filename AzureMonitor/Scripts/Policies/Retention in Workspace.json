@@ -1,0 +1,22 @@
+{
+        "mode": "All",
+        "policyRule": {
+        "if": {
+            "allOf":[
+                {
+                "field": "type",
+                "equals": "Microsoft.OperationalInsights/workspaces"
+                },
+                {
+                "value": "Microsoft.OperationalInsights/workspaces/retentionInDays",
+                "notEquals": "150" 
+                }
+            ]
+        
+        },
+        "then": {
+            "effect": "audit"
+            }
+        }
+}
+
